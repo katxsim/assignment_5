@@ -87,7 +87,7 @@ export default class EditTodo extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>With who? </label>
+                        <label>Responsible for Driving </label>
                         <input  type="text"
                                 className="form-control"
                                 value={this.state.todo_responsible}
@@ -104,7 +104,7 @@ export default class EditTodo extends Component {
                                     checked={this.state.todo_priority==='Low'}
                                     onChange={this.onChangeTodoPriority}
                             />
-                            <label className="form-check-label">Easy</label>
+                            <label className="form-check-label">Low</label>
                         </div>
                         <div className="form-check form-check-inline">
                             <input  className="form-check-input"
@@ -126,7 +126,7 @@ export default class EditTodo extends Component {
                                     checked={this.state.todo_priority==='High'}
                                     onChange={this.onChangeTodoPriority}
                             />
-                            <label className="form-check-label">Hard</label>
+                            <label className="form-check-label">High</label>
                         </div>
                         <div className="form-check">
                             <input  type="checkbox"

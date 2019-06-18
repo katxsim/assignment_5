@@ -6,6 +6,11 @@ const mongoose = require('mongoose');
 const todoRoutes = express.Router();
 const PORT = 4000;
 
+// express: framework for Node
+// body parser: Middlewear - parsing HTTP link
+// CORS: cross origin resource sharing
+//mongoose: lets us access mongoose in a OOP way
+
 let Todo = require('./todo.model');
 
 app.use(cors());
