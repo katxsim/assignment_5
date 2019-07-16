@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const todoRoutes = express.Router();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 // express: framework for Node
 // body parser: Middlewear - parsing HTTP link
@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 var mongodb = "mongodb+srv://kat123:kat123@cluster0-bhdxt.mongodb.net/test?retryWrites=true&w=majority";
-mongoose.connect(mongodb, { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || mongodb, { useNewUrlParser: true });
 const connection = mongoose.connection;
 
 connection.once('open', function() {
@@ -57,6 +57,7 @@ todoRoutes.route('/update/:id').post(function(req, res) {
         if (!todo)
             res.status(404).send('data is not found');
         else
+
             todo.todo_description = req.body.todo_description;
         todo.todo_responsible = req.body.todo_responsible;
         todo.todo_priority = req.body.todo_priority;
