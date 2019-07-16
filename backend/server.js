@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const todoRoutes = express.Router();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 
 // express: framework for Node
 // body parser: Middlewear - parsing HTTP link

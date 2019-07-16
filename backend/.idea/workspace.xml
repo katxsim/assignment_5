@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c61273eb-12e9-4f2e-bace-753a6c03dc84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/create-todo.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/create-todo.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/edit-todo.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/edit-todo.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/todos-list.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/todos-list.component.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +151,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="489" y="123" width="1131" height="827" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13774104" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
