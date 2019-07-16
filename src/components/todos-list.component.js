@@ -21,7 +21,7 @@ export default class TodosList extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:4000/todos/')
+        axios.get('http://localhost:4000/todos')
             .then(response => {
                 this.setState({todos: response.data});
             })
@@ -31,7 +31,7 @@ export default class TodosList extends Component {
     }
 
     componentDidUpdate() {
-        axios.get('http://localhost:4000/todos/')
+        axios.get('ttp://localhost:4000/todos')
             .then(response => {
                 this.setState({todos: response.data});
             })
@@ -54,8 +54,8 @@ export default class TodosList extends Component {
                     <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Responsible for Driving</th>
-                        <th>Priority</th>
+                        <th>With who?</th>
+                        <th>Difficulty</th>
                         <th>Actions</th>
                     </tr>
                     </thead>
