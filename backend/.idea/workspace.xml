@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c61273eb-12e9-4f2e-bace-753a6c03dc84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/create-todo.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/create-todo.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/edit-todo.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/edit-todo.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/todos-list.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/todos-list.component.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
