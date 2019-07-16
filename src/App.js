@@ -15,7 +15,7 @@ class App extends Component {
 
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                             <img src={"http://cdn.shopify.com/s/files/1/0603/7977/products/TheMountainsAreCalling_12Inch_BlackGraphic_600x.png?v=1551312101"} width="500" height="400" alt="" />
-                        <Link to="/" className="navbar-brand">Hike It!</Link>
+                        <Link to="/" className="navbar-brand">Hike It BB!</Link>
                         <div className="collpase nav-collapse">
                             <ul className="navbar-nav mr-auto">
                                 <li className="navbar-item">
