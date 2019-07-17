@@ -7,7 +7,7 @@ const todoRoutes = express.Router();
 const PORT = process.env.PORT || 4000;
 
 // express: framework for Node
-// body parser: Middlewear - parsing HTTP link
+// body parser: Middleware - parsing HTTP link
 // CORS: cross origin resource sharing
 //mongoose: lets us access mongoose in a OOP way
 
@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 var mongodb = "mongodb+srv://kat123:kat123@cluster0-bhdxt.mongodb.net/test?retryWrites=true&w=majority";
-mongoose.connect(process.env.MONGODB_URI || mongodb, { useNewUrlParser: true });
+mongoose.connect(mongodb || process.env.MONGODB_URI, { useNewUrlParser: true });
 const connection = mongoose.connection;
 
 connection.once('open', function() {
