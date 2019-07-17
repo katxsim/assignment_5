@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const path = require('path');
 const todoRoutes = express.Router();
 const PORT = process.env.PORT || 4000;
 
@@ -73,6 +74,10 @@ todoRoutes.route('/update/:id').post(function(req, res) {
 });
 
 app.use('/todos', todoRoutes);
+app.use(express.static(path.join(__dirname, '../build')));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build', 'index.html'));
+})
 
 app.listen(PORT, function() {
     console.log("Server is running on Port: " + PORT);
