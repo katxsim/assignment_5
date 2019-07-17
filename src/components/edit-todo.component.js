@@ -21,7 +21,8 @@ export default class EditTodo extends Component {
     }
 
     componentDidMount() {
-        axios.get('/todos'+this.props.match.params.id)
+        axios
+            .get('/todos'+this.props.match.params.id)
             .then(response => {
                 this.setState({
                     todo_description: response.data.todo_description,
@@ -31,7 +32,8 @@ export default class EditTodo extends Component {
                 })
             })
             .catch(function(error) {
-                console.log(error)
+                console.log("error in changing list item");
+                console.log(error);
             })
     }
 
@@ -67,8 +69,17 @@ export default class EditTodo extends Component {
             todo_priority: this.state.todo_priority,
             todo_completed: this.state.todo_completed
         };
-        axios.post('/todos/update'+this.props.match.params.id, obj)
-            .then(res => console.log(res.data));
+        axios
+            .post('/todos/update'+this.props.match.params.id, {
+                obj
+            })
+            .then(res => {
+                console.log(res.data)
+            })
+            .catch(err => {
+                console.log("error in edit todo submit");
+                console.log(err);
+            });
 
         this.props.history.push('/');
     }

@@ -21,21 +21,25 @@ export default class TodosList extends Component {
     }
 
     componentDidMount() {
-        axios.get('/todos')
+        axios
+            .get('/todos')
             .then(response => {
                 this.setState({todos: response.data});
             })
             .catch(function (error) {
+                console.log("error in getting data did mount");
                 console.log(error);
             })
     }
 
     componentDidUpdate() {
-        axios.get('/todos')
+        axios
+            .get('/todos')
             .then(response => {
                 this.setState({todos: response.data});
             })
             .catch(function (error) {
+                console.log("error in getting data did update");
                 console.log(error);
             })
     }
